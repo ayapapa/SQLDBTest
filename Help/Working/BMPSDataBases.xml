@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BMPSDataBases</name>
+    </assembly>
+    <members>
+        <member name="T:BPMSDataBases.DBHandler">
+            <summary>
+            データベース操作を行うクラス
+              暫定でPostgreを利用
+            </summary>
+        </member>
+        <member name="T:BPMSDataBases.DBHandler.Connection">
+            <summary>
+            データベースコネクター
+            シングルトンクラスであり、一度作成したDB接続オブジェクトは
+            本クラスが削除されるまで接続状態のまま保持される
+            </summary>
+        </member>
+        <member name="M:BPMSDataBases.DBHandler.Connection.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            コンストラクタ
+            データベースに接続する
+            </summary>
+            <returns>リストのEnumerator</returns>
+            <param name="server">データベースサーバー名またはIPアドレス</param>
+            <param name="port">ポート番号</param>
+            <param name="user">ログインユーザー名</param>
+            <param name="pass">ログインパスワード</param>
+            <param name="dbName">データベース名</param>
+        </member>
+        <member name="M:BPMSDataBases.DBHandler.Connection.Finalize">
+            <summary>
+            デストラクタ
+            データベースを切断する
+            </summary>
+        </member>
+        <member name="M:BPMSDataBases.DBHandler.Connection.Open">
+            <summary>
+            DBを接続する
+            </summary>
+            <returns>なし</returns>
+        </member>
+        <member name="M:BPMSDataBases.DBHandler.Connection.GetConnection">
+            <summary>
+            DB接続オブジェクトを取得する
+            </summary>
+            <returns> DB接続オブジェクト</returns> 
+        </member>
+    </members>
+</doc>
