@@ -41,6 +41,11 @@
             </summary>
             <returns>なし</returns>
         </member>
+        <member name="M:BPMSDataBases.DBHandler.Connection.Close">
+            <summary>
+            データベースを切断する
+            </summary>
+        </member>
         <member name="M:BPMSDataBases.DBHandler.Connection.GetConnection">
             <summary>
             DB接続オブジェクトを取得する

@@ -31,16 +31,6 @@
 		</GenerateDependsOn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Npgsql, Version=3.2.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>C:\Users\onda\OneDrive\dev\vs\BMPSDataBases\packages\Npgsql.3.2.2\lib\net45\Npgsql.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>C:\Users\onda\OneDrive\dev\vs\BMPSDataBases\packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Assembly Include="C:\Users\onda\OneDrive\dev\vs\BMPSDataBases\bin\Debug\BMPSDataBases.dll" />
   </ItemGroup>
   <Target Name="Generate" DependsOnTargets="$(GenerateDependsOn)" />
