@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPMSDataBases", "BPMSDataBases.csproj", "{E6D180CD-855A-4B07-BF9D-309595B16832}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{66B9D43A-1322-41A8-8B65-5EFBF3B5F0E5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E6D180CD-855A-4B07-BF9D-309595B16832} = {E6D180CD-855A-4B07-BF9D-309595B16832}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

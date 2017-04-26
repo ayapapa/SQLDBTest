@@ -8,15 +8,15 @@ using System.Data;
 // PostgreDB
 using Npgsql;
 
-
 namespace BPMSDataBases
 {
 
     /// <summary>
     /// データベースコネクター
-    /// シングルトンクラスであり、一度作成したDB接続オブジェクトは
-    /// 本クラスが削除されるまで接続状態のまま保持される
     /// </summary>
+    /// <remarks>
+    /// ここに備考を記載する
+    /// </remarks>
     public class DBConnection : IDisposable
     {
         /// <summary>
@@ -29,6 +29,21 @@ namespace BPMSDataBases
         /// <param name="user">ログインユーザー名</param>
         /// <param name="pass">ログインパスワード</param>
         /// <param name="dbName">データベース名</param>
+        /// <remarks>
+        /// ここに備考を記載する
+        /// </remarks>
+        /// <example> 
+        /// This sample shows how to call the <see cref="DBConnection"/> method.
+        /// <code>
+        /// class TestClass 
+        /// {
+        ///     static int Main() 
+        ///     {
+        ///         return GetZero();
+        ///     }
+        /// }
+        /// </code>
+        /// </example>
         public DBConnection(String server = null, String port = null, String user = null, String pass = null, String dbName = null)
         {
 
