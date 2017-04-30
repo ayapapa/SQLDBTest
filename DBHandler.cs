@@ -50,10 +50,10 @@ namespace BPMSDataBases
             //データベース接続
             //var connString = @"Server=localhost;Port=5432;User Id=postgres;Password=rootroot;Database=postgres";
             //var connString = @"Server=localhost;Port=5432;User Id=test;Password=test;Database=testdb";
-            var connString = "Server=" + SelectDBParamItem(server, defaultServer) + ";"
-                           + "Port=" + SelectDBParamItem(port, defaultPort) + ";"
-                           + "User Id=" + SelectDBParamItem(user, defaultUser) + ";"
-                           + "Password=" + SelectDBParamItem(user, defaultPass) + ";"
+            var connString = "Server="   + SelectDBParamItem(server, defaultServer) + ";"
+                           + "Port="     + SelectDBParamItem(port, defaultPort)     + ";"
+                           + "User Id="  + SelectDBParamItem(user, defaultUser)     + ";"
+                           + "Password=" + SelectDBParamItem(pass, defaultPass)     + ";"
                            + "Database=" + SelectDBParamItem(dbName, defaultDBName);
             _conn = new NpgsqlConnection(connString);
         }
